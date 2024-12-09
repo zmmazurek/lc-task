@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LiveChat Enterprise</title>
+	<style>
+	body {
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+		background-color: #f8f8f8;
+		color: #333;
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
+		background-color: #fff;
+		border-bottom: 1px solid #e5e5e5;
+		padding: 1rem;
+	}
+
+	header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: #333;
+	}
+
+	header nav a {
+		margin: 0 1rem;
+		color: #333;
+		text-decoration: none;
+	}
+
+	main {
+		padding: 2rem;
+		text-align: center;
+		background-color: #fff;
+	}
+
+	footer {
+		background-color: #333;
+		color: #fff;
+		padding: 2rem 0;
+		text-align: center;
+	}
+
+	footer a {
+		color: #fff;
+		text-decoration: none;
+		margin: 0 1rem;
+	}
+
+	.hero {
+		background-size: cover;
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: var(--font-size-3xl);
+		font-weight: 700;
+		letter-spacing: -2px;
+		line-height: 1.10714286;
+	}
+
+	.hero h1 {
+		font-size: 3rem;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="https://www.livechat.com/lc-powered-by-logo.svg" alt="LiveChat logo" width="134" height="40">
+			</div>
+			<nav>
+				<a href="#features">Features</a>
+				<a href="#pricing">Pricing</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<div class="hero">
+		<h1>Welcome to LiveChat</h1>
+	</div>
+	<main>
+		<p>We are here to help you 24/7</p>
+		<br>
+		<img src="https://www.livechat.com/enterprise/screen.png" alt="Friendly Support">
+	</main>
+	<footer>
+		<div class="container">
+			<p>© 2024 Text, Inc. All rights reserved.</p>
+			<nav>
+				<a href="#privacy">Privacy Policy</a>
+				<a href="#terms">Terms of Service</a>
+				<a href="#support">Support</a>
+			</nav>
+		</div>
+	</footer>
+	<!-- Start of LiveChat (www.livechat.com) code -->
+  <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 14352783;
+      window.__lc.integration_name = "manual_channels";
+      (function(n, t, c) {
+          function i(n) {
+              return e._h ? e._h.apply(null, n) : e._q.push(n)
+          }
+          var e = {
+              _q: [],
+              _h: null,
+              _v: "2.0",
+              on: function() {
+                  i(["on", c.call(arguments)])
+              },
+              once: function() {
+                  i(["once", c.call(arguments)])
+              },
+              off: function() {
+                  i(["off", c.call(arguments)])
+              },
+              get: function() {
+                  if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                  return i(["get", c.call(arguments)])
+              },
+              call: function() {
+                  i(["call", c.call(arguments)])
+              },
+              init: function() {
+                  var n = t.createElement("script");
+                  n.async = true;
+                  n.type = "text/javascript";
+                  n.src = "https://cdn.livechatinc.com/tracking.js";
+                  t.head.appendChild(n);
+              }
+          };
+          if (!n.__lc.asyncInit) e.init();
+          n.LiveChatWidget = n.LiveChatWidget || e;
+      })(window, document, [].slice);
+  </script>
+	<noscript><a href="https://www.livechat.com/chat-with/14352783/" rel="nofollow">Chat with us</a>, powered by <a
+			href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+	<!-- End of LiveChat code -->
+</body></html>
